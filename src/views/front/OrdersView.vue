@@ -20,7 +20,7 @@
                 <td style="color: #e0a497;font-size: 20px;">NT. {{ order.total }}</td>
                 <td>
                   <ul>
-                    <li v-for="item in order.cart" :key="item._id">
+                    <li style="list-style-image: linear-gradient(0deg, #ffe9d4, #cc6600);" v-for="item in order.cart" :key="item._id">
                       {{ item.product.name }} * {{ item.quantity }}
                     </li>
                   </ul>

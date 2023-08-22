@@ -16,21 +16,21 @@
     <VRow id="advertise">
       <VCol class="advertise">
           <swiper
-            :effect="'coverflow'"
-            :grabCursor="true"
-            :centeredSlides="true"
-            :slidesPerView="'auto'"
-            :loop="true"
-            :coverflowEffect="{
+          :effect="'coverflow'"
+          :grabCursor="true"
+          :centeredSlides="true"
+          :slidesPerView="3"
+          :loop="true"
+          :coverflowEffect="{
             rotate: 50,
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: false,
-            }"
-            :pagination="true"
-            :modules="modules"
-            class="mySwiper">
+            slideShadows: true,
+          }"
+          :pagination="true"
+          :modules="modules"
+          >
             <swiper-slide>
               <img src="https://i.imgur.com/8glreJA.jpg"/>
             </swiper-slide>
@@ -49,6 +49,7 @@
           </swiper>
       </VCol>
     </VRow>
+
     <!-- section3 -->
     <v-parallax
       id="parallax"
@@ -78,8 +79,8 @@
     <VRow id="homeinfo">
       <VCol class="info">
         <div>
-          <img class="infoimg1" src="https://i.imgur.com/ahsnFws.png">
-          <img class="infoimg2" src="https://i.imgur.com/FCHGSMB.png">
+          <img class="infoimg1" src="https://i.imgur.com/ADlJJcL.png">
+          <img class="infoimg2" src="https://i.imgur.com/mG4yBa7.png">
           <div class="infotext">
             <h1>愛的環保，守護下一代</h1>
             <br>
@@ -150,6 +151,7 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { EffectCoverflow, Pagination } from 'swiper/modules'
 import ProductCard from '@/components/ProductCard.vue'
+import { useDisplay } from 'vuetify'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -184,5 +186,13 @@ onMounted(() => {
     })
   }
 })()
+const { mobile } = useDisplay()
+const swiperDirect = () => {
+  if (mobile.value) {
+    return 'vertical'
+  } else {
+    return 'horizontal'
+  }
+}
 
 </script>

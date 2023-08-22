@@ -100,4 +100,14 @@
     background: #f2e8b8;
     height: 50px;
   }
+  #designer {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-weight: bold;
+    opacity: 0;
+    @include lg {
+      opacity: 1;
+    }
+  }
 }

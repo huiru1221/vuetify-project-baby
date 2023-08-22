@@ -71,6 +71,10 @@
       <VRow id="footerbottom">
         <VCol></VCol>
       </VRow>
+      <div id="designer" class="text-white">
+        <p>泰山職訓前端網頁專題</p>
+        <p>by Hui-Ru Chen</p>
+      </div>
     </VContainer>
 
 </template>
