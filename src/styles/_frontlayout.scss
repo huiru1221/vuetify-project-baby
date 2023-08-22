@@ -1,0 +1,24 @@
+#appBar {
+  height: 100px;
+  .appBarContainer {
+    height: 100%;
+    position: absolute;
+    .appBarTitle {
+      height: 100%;
+      .appBarTitleBtn {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .appBarImg {
+            width: 100%;
+        }
+      } 
+      .appBarNavIcon{
+        position: absolute; 
+        right: 3%;
+        top: 60%;
+      }   
+    }
+  }
+}

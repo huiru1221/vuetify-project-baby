@@ -1,0 +1,37 @@
+
+  #productCard {
+    height: 320px;
+    padding: 0px;
+    @include sm {
+      padding: 30px;
+    }
+    &:hover {
+      border: 2px dotted #e0a497;
+      .cartBtn {
+        opacity: 1;
+      }
+      @include sm {
+        .img {
+          height: 90%;
+        }
+      }
+    }
+    .img {
+      height: 73%;
+    }
+    #productCardTitle {
+      margin-top: 11px;
+      .productCardRouterLink {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .productCardSubtitle {
+        position: relative;
+        font-size: 16px;
+        
+      }
+    }
+    .cartBtn {
+      opacity: 0;
+    }
+  }

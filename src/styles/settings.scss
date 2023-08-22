@@ -1,0 +1,36 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+@import 'breakpoints';
+
+@import 'productview';
+
+@import 'productcard';
+
+@import 'productcardview';
+
+@import 'cartview';
+
+@import 'frontlayout';
+
+@import 'background';
+
+@import 'homeview';
+
+@import 'adminlayout';
+
+@import 'adminhomeview';
+
+@import 'adminproductsview';
+
+@font-face {
+  font-family: 'cheek';
+  src: url(@/assets/CheekFont-Regular.ttf);
+}

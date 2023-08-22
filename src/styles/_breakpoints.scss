@@ -1,0 +1,72 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+$breakpoint-xxl: 2560px;
+
+@mixin sm {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: $breakpoint-xxl) {
+    @content;
+  }
+}
+
+@include sm {
+  .container {
+    width: 75%;
+  }
+  .col {
+    width: 50%;
+  }
+
+  .col + .col {
+    margin-top: 0px;
+  }
+}
+
+@include md {
+  .col {
+    width: 33.333333%;
+  }
+}
+
+@include lg {
+  .col {
+    width: 25%;
+  }
+}
+
+@include xl {
+  .col {
+    width: 20%;
+  }
+}
+
+@include xxl {
+  .col {
+    width: 10%;
+  }
+}

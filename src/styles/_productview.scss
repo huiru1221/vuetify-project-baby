@@ -1,0 +1,103 @@
+#productsSwiper {
+  width: 100vw;
+  margin-bottom: 50px
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productsTableCard {
+  box-shadow: none;
+}
+
+#footer2 {
+  margin-top: 200px;
+  padding: 0;
+  position: relative;
+  #footerlogo {
+    text-align: center;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 250px;
+    img {
+      width: 100%;
+      opacity: 0;
+      @include sm {
+        opacity: 0;
+      }
+      @include md {
+        opacity: 0;
+      }
+      @include lg {
+        opacity: 100;
+      }
+      @include xl {
+        opacity: 100;
+      }
+      @include xxl {
+        opacity: 100;
+      }
+    }
+  }
+  #footerinfo::before {
+    content: "";
+    background-image: url("https://i.imgur.com/Wjs6Tl8.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 9.375vw;
+    top: 3px;
+    left: 0;
+    transform: translateY(-100%);
+  }
+  #footerinfo {
+    background: #f2e8b8;
+    .footerimg {
+      // width: 50px;
+      text-align: center;
+      img {
+        height: 150px;
+        @include lg {
+          height: 100px;
+        }
+      }
+    }
+  }
+  #footercontact {
+    background: #f2e8b8;
+    text-align: center;
+    .contactweek {
+      padding: 0;
+      color: #665D4A;
+      font-weight: bold;
+    }
+    .contactsns {
+      img {
+        width: 25px;
+        margin-left: 15px;
+      }
+    }
+  }
+  #footerbottom {
+    background: #f2e8b8;
+    height: 50px;
+  }
+}
