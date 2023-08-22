@@ -18,16 +18,6 @@ const routes = [
         }
       },
       {
-        path: 'register',
-        name: 'Register',
-        component: () => import(/* webpackChunkName: "register" */ '@/views/front/RegisterView.vue'),
-        meta: {
-          title: '購物網 | 註冊',
-          login: false,
-          admin: false
-        }
-      },
-      {
         path: 'login',
         name: 'Login',
         component: () => import(/* webpackChunkName: "login" */ '@/views/front/LoginView.vue'),
