@@ -88,6 +88,9 @@
     </template>
   </v-bottom-navigation>
   <v-img
+    data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1000"
     id="followUs"
     src="https://i.imgur.com/Rv4iTZH.png"
   ></v-img>

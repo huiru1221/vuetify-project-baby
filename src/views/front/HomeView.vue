@@ -83,8 +83,13 @@
       id="parallax"
       src="https://i.imgur.com/xgb6LKR.jpg"
     >
-      <div class="d-flex flex-column fill-height justify-center align-center text-white">
-        <h1 class="text-h1 font-weight-bold font-weight-thin parallaxtext">
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        class="d-flex flex-column fill-height justify-center align-center text-white">
+        <h1
+          class="text-h1 font-weight-bold font-weight-thin parallaxtext">
           本月精選
         </h1>
         <h4 class="subheading">
@@ -107,9 +112,23 @@
     <VRow id="homeinfo">
       <VCol class="info">
         <div>
-          <img class="infoimg1" src="https://i.imgur.com/ADlJJcL.png">
-          <img class="infoimg2" src="https://i.imgur.com/mG4yBa7.png">
-          <div class="infotext">
+          <img
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="2500"
+          class="infoimg1"
+          src="https://i.imgur.com/ADlJJcL.png">
+          <img
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="2500"
+          class="infoimg2"
+          src="https://i.imgur.com/mG4yBa7.png">
+          <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="3000"
+          class="infotext">
             <h1>愛的環保，守護下一代</h1>
             <br>
             <p>在這個少子化且物價通膨快速的年代，大量採購新的育嬰用品不僅浪費錢財也不環保，許多家庭養育小孩長大會留下很多無法再使用的育嬰用品，我們希望能透過這樣的交易平台，使這些東西能夠有新的利用價值之外，也能做環保，為地球盡一份力。</p>
@@ -128,7 +147,8 @@
           <img src="https://i.imgur.com/HEn5VLx.png">
         </VCol>
       </VRow>
-      <VRow id="footerinfo" class="justify-center">
+      <VRow
+        id="footerinfo" class="justify-center">
         <VCol class="footerimg" cols="6" md="4" lg="1">
           <img src="https://i.imgur.com/WDynz2M.png">
         </VCol>
@@ -149,9 +169,21 @@
         </VCol>
       </VRow>
       <VRow id="footercontact">
-        <VCol class="contactweek" cols="12">聯絡我們</VCol>
-        <VCol class="contactweek" cols="12">週一到週五： 10:00–12:30、13:30–17:00</VCol>
-        <VCol class="contactsns" cols="12">
+        <VCol
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000"
+        class="contactweek" cols="12">聯絡我們</VCol>
+        <VCol
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000"
+        class="contactweek" cols="12">週一到週五： 10:00–12:30、13:30–17:00</VCol>
+        <VCol
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000"
+        class="contactsns" cols="12">
           <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=906dydrs"><img src="https://i.imgur.com/j5Qldq4.png"></a>
         </VCol>
       </VRow>
@@ -160,6 +192,7 @@
       </VRow>
       <div id="designer" class="text-white">
         <p>泰山職訓前端網頁專題</p>
+        <p>(僅作學術使用)</p>
         <p>by Hui-Ru Chen</p>
       </div>
     </VContainer>
@@ -180,6 +213,8 @@ import 'swiper/css/pagination'
 import { EffectCoverflow, Pagination, Mousewheel } from 'swiper/modules'
 import ProductCard from '@/components/ProductCard.vue'
 // import { useDisplay } from 'vuetify'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -187,6 +222,8 @@ const modules = [EffectCoverflow, Pagination, Mousewheel]
 
 const createSnackbar = useSnackbar()
 // const { lg } = useDisplay()
+
+AOS.init()
 
 const products = ref([])
 onMounted(() => {

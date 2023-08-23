@@ -12,6 +12,7 @@
     "@boindil/vue-file-agent-next": "^1.0.5",
     "@mdi/font": "7.0.96",
     "@vuepic/vue-datepicker": "^5.4.0",
+    "aos": "^2.3.4",
     "axios": "^1.4.0",
     "core-js": "^3.29.0",
     "dayjs": "^1.11.9",
