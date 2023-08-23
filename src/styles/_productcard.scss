@@ -2,18 +2,17 @@
   #productCard {
     height: 320px;
     padding: 0px;
+    box-shadow: none;
     @include sm {
       padding: 30px;
     }
     &:hover {
-      border: 2px dotted #e0a497;
+      .img {
+        transform: rotate(7deg);
+        opacity: 0.5;
+      }
       .cartBtn {
         opacity: 1;
-      }
-      @include sm {
-        .img {
-          height: 90%;
-        }
       }
     }
     .img {
