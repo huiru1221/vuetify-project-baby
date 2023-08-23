@@ -125,20 +125,33 @@
   .info {
     // margin-top: 100px;
     // margin-bottom: 100px;
-    height: 500px;
+    height: 800px;
     padding-top: 800px;
     padding-bottom: 60px;
     background: #a09375;
     .infoimg1{
       width: 80%;
       position: absolute;
-      top: 0;
+      top: -24px;
       left: 15%;
+      z-index: 2;
       @include sm {
-        width: 30%;
+        width: 50%;
+        position: absolute;
+        top: -24px;
+        left: 40%;
+      }
+      @include md {
+        width: 40%;
         position: absolute;
         top: -10%;
         left: 50%;
+      }
+      @include lg {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 52%;
       }
     }
     .infoimg2{
@@ -147,27 +160,53 @@
       top: 40%;
       left: 10%;
       @include sm {
-        width: 30%;
+        width: 50%;
         position: absolute;
-        top: 14%;
+        top: 38%;
         left: 20%;
+      }
+      @include md {
+        width: 40%;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+      }
+      @include lg {
+        width: 40%;
+        position: absolute;
+        top: 15px;
+        left: 18%;
       }
     }
     .infotext {
       width: 280px;
       position: absolute;
-      top: 45%;
+      top: 44%;
       left: 18%;
-      font-size: 12px;
+      font-size: 13px;
       text-align: center;
       color: #665D4A;
       font-family: '微軟正黑體';
       @include sm {
-        font-size: 20px;
-        width: 400px;
+        font-size: 15px;
+        width: 330px;
+        position: absolute;
+        top: 46%;
+        left: 26%;
+      }
+      @include md {
+        font-size: 14px;
+        width: 330px;
         position: absolute;
         top: 25%;
         left: 25%;
+      }
+      @include lg {
+        font-size: 20px;
+        width: 441px;
+        position: absolute;
+        top: 161px;
+        left: 23%;
       }
       h3 {
         font-family: 'cheek';
