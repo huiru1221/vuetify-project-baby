@@ -49,7 +49,7 @@
         </template>
       </template>
       <v-btn
-        class="logBtn mt-16 me-10"
+        class="logBtn mt-16"
         v-if="isLogin"
         variant="flat"
         prepend-icon="mdi-logout"
