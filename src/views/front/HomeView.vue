@@ -178,13 +178,13 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
-import { EffectCoverflow, Pagination } from 'swiper/modules'
+import { EffectCoverflow, Pagination, Mousewheel } from 'swiper/modules'
 import ProductCard from '@/components/ProductCard.vue'
 import { useDisplay } from 'vuetify'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const modules = [EffectCoverflow, Pagination]
+const modules = [EffectCoverflow, Pagination, Mousewheel]
 
 const createSnackbar = useSnackbar()
 const { lg } = useDisplay()
