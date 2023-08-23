@@ -14,8 +14,9 @@
     </div>
   <!-- section2 -->
     <VRow id="advertise">
-      <VCol class="advertise">
+      <VCol class="advertise" v-if="lg">
           <swiper
+
           :effect="'coverflow'"
           :grabCursor="true"
           :centeredSlides="true"
@@ -47,6 +48,34 @@
               <img src="https://i.imgur.com/qOvDufN.jpg"/>
             </swiper-slide>
           </swiper>
+      </VCol>
+      <VCol v-else>
+        <swiper
+          :direction="'vertical'"
+          :slidesPerView="1"
+          :spaceBetween="30"
+          :mousewheel="true"
+          :pagination="{
+            clickable: true,
+          }"
+          :modules="modules"
+          class="mySwiper">
+          <swiper-slide>
+              <img src="https://i.imgur.com/8glreJA.jpg"/>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://i.imgur.com/6IBtN6S.jpg"/>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://i.imgur.com/tb2BIVJ.jpg"/>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://i.imgur.com/qwbuuYu.jpg"/>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://i.imgur.com/qOvDufN.jpg"/>
+            </swiper-slide>
+        </swiper>
       </VCol>
     </VRow>
 
@@ -158,6 +187,7 @@ gsap.registerPlugin(ScrollTrigger)
 const modules = [EffectCoverflow, Pagination]
 
 const createSnackbar = useSnackbar()
+const { lg } = useDisplay()
 
 const products = ref([])
 onMounted(() => {
@@ -186,13 +216,5 @@ onMounted(() => {
     })
   }
 })()
-const { mobile } = useDisplay()
-const swiperDirect = () => {
-  if (mobile.value) {
-    return 'vertical'
-  } else {
-    return 'horizontal'
-  }
-}
 
 </script>
