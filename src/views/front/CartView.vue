@@ -59,7 +59,7 @@
         <VCardTitle style="margin-bottom: 20px;font-weight: bold;color: #665D4A; text-align: left;">訂單資訊</VCardTitle>
         <p class="text-h6" style="margin-bottom: 10px;text-align: right;">運費: 免運</p>
         <p class="text-h6" style="margin-bottom: 10px;text-align: right;">總金額:</p>
-        <p class="text-h3" style="margin-bottom: 40px;text-align: right;">NT. {{ total }}</p>
+        <p class="text-h3" style="margin-bottom: 20px;text-align: right;">NT. {{ total }}</p>
         <div m-auto>加入line官方帳號，可接收訂單資訊
           <VImg cols="6" src="https://i.imgur.com/5y5LKsA.png" width="45%" style="margin: auto; margin-bottom: 20px;"></VImg>
         </div>
