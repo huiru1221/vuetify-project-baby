@@ -14,9 +14,8 @@
     </div>
   <!-- section2 -->
     <VRow id="advertise">
-      <VCol class="advertise" v-if="lg">
+      <VCol class="advertise">
           <swiper
-
           :effect="'coverflow'"
           :grabCursor="true"
           :centeredSlides="true"
@@ -49,7 +48,7 @@
             </swiper-slide>
           </swiper>
       </VCol>
-      <VCol v-else>
+      <!-- <VCol v-else>
         <swiper
           :direction="'vertical'"
           :slidesPerView="1"
@@ -76,7 +75,7 @@
               <img src="https://i.imgur.com/qOvDufN.jpg"/>
             </swiper-slide>
         </swiper>
-      </VCol>
+      </VCol> -->
     </VRow>
 
     <!-- section3 -->
@@ -180,14 +179,14 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { EffectCoverflow, Pagination, Mousewheel } from 'swiper/modules'
 import ProductCard from '@/components/ProductCard.vue'
-import { useDisplay } from 'vuetify'
+// import { useDisplay } from 'vuetify'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const modules = [EffectCoverflow, Pagination, Mousewheel]
 
 const createSnackbar = useSnackbar()
-const { lg } = useDisplay()
+// const { lg } = useDisplay()
 
 const products = ref([])
 onMounted(() => {
