@@ -1,7 +1,7 @@
 // section1
 
 #home {
-  width: 120vw;
+  width: 100vw;
   height: 50vw;
   background-image: url("https://i.imgur.com/lDY11sz.jpg");
   background-size: cover;
@@ -66,7 +66,7 @@
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
-      height: 300px;
+      height: 500px;
       @include sm {
         width: 60%;
       }
